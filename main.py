@@ -9,4 +9,8 @@ def message():
 # New Route
 @app.get("/login")
 def login():
-    return {"user": "daniel692a"}
+    return "Ingrese sus datos"
+
+@app.get("/user/{user_id}")
+def show_user(user_id):
+    return f"User id is: {user_id}"
