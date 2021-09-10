@@ -15,3 +15,14 @@ $ uvicorn main:app --reload
 $ uvicorn main:app --port 3000
 ```
 > You can change 3000
+
+## Access to doc
+In search bar write: `localhost:port/redoc`
+
+## Use of Type Hints:
+```python
+@app.get('/user/{user_id}')
+def show_user(user_id: int):
+    actions...
+```
+Check the value and return error if `user_id` isn't a integer

@@ -12,5 +12,9 @@ def login():
     return "Ingrese sus datos"
 
 @app.get("/user/{user_id}")
-def show_user(user_id):
+def show_user(user_id: int):
+    """
+    Valid the value of user_id
+    The correct value must be an integer
+    """
     return f"User id is: {user_id}"
