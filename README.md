@@ -26,3 +26,9 @@ def show_user(user_id: int):
     actions...
 ```
 Check the value and return error if `user_id` isn't a integer
+
+## Access to Swagger docs
+In search bar, write:
+```bash
+loalhost:port/docs
+```
